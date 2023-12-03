@@ -11,7 +11,7 @@ html {
 
 #container {
     display: grid;
-    grid-template-rows: 100px auto;
+    grid-template-rows: 120px auto;
     grid-template-columns: 1fr 4fr;
 }
 #header {
@@ -55,7 +55,8 @@ li {
 #nav ul li img,
 #settings ul li img,
 #search-box img,
-#user-box img {
+#user-box img,
+#user-welcome img {
     height: 15px;
     padding-right: 15px;
 }
@@ -80,11 +81,13 @@ li {
     justify-items: center;
     grid-template-columns: 1fr 1fr auto;
 }
-#user-box .user-icon {
+#user-box .user-icon,
+#user-welcome .user-icon {
     height: 25px;
     padding: 0;
 }
-#user-box div {
+#user-box div,
+#user-welcome-icon {
     background-color: cadetblue;
     border-radius: 50%;
     height: 35px;
@@ -92,4 +95,35 @@ li {
     display: grid;
     align-content: center;
     justify-items: center;
+}
+#head-second-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+    align-items: center;
+}
+#user-welcome {
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+}
+#user-welcome-icon {
+    grid-row: span 2;
+}
+#user-welcome p {
+    padding-left: 10px;
+}
+#user-welcome #user{
+    font-size: 1.6rem;
+
+}
+#button-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+#button-box button {
+    background-color: chocolate;
+    border-radius: 15px;
+    padding: 4px 8px;
 }
