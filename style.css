@@ -17,6 +17,8 @@ html {
 #header {
     background-color: aqua;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
 #sidebar {
     background-color: cadetblue;
