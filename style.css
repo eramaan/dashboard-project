@@ -19,6 +19,7 @@ html {
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 1fr 2fr;
+    padding: 25px 20px 10px 20px;
 }
 #sidebar {
     background-color: cadetblue;
@@ -52,7 +53,43 @@ li {
     font-size: 2rem;
 }
 #nav ul li img,
-#settings ul li img {
+#settings ul li img,
+#search-box img,
+#user-box img {
     height: 15px;
     padding-right: 15px;
+}
+#head-first-row {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+#search-box {
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content auto;
+}
+#search-bar {
+    background-color: lightgray;
+    border-radius: 15px;
+    width: 80%;
+    border: none;
+}
+#user-box {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr auto;
+}
+#user-box .user-icon {
+    height: 25px;
+    padding: 0;
+}
+#user-box div {
+    background-color: cadetblue;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
 }
