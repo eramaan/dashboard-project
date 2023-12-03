@@ -170,3 +170,7 @@ hr {
     border-bottom: 1px solid var(--bkgr-dark);
     padding-bottom: 10px;
 }
+#users-trending {
+    display: grid;
+    gap: 15px;
+}
